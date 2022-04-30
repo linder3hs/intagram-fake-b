@@ -13,8 +13,11 @@
 		86114CD72813331400D03B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86114CD52813331400D03B56 /* Main.storyboard */; };
 		86114CD92813331500D03B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86114CD82813331500D03B56 /* Assets.xcassets */; };
 		86114CDC2813331500D03B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86114CDA2813331500D03B56 /* LaunchScreen.storyboard */; };
-		86114CE92813337300D03B56 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86114CE82813337300D03B56 /* Pokemon.swift */; };
-		86114CEB281333A900D03B56 /* PokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86114CEA281333A900D03B56 /* PokeViewModel.swift */; };
+		86114CE92813337300D03B56 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86114CE82813337300D03B56 /* Posts.swift */; };
+		86114CEB281333A900D03B56 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86114CEA281333A900D03B56 /* PostsViewModel.swift */; };
+		86F77FC9281D70D400E889D4 /* Post+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F77FC8281D70D400E889D4 /* Post+Image.swift */; };
+		86F77FCB281D710000E889D4 /* Post+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F77FCA281D710000E889D4 /* Post+String.swift */; };
+		86F77FCE281D7B5C00E889D4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F77FCD281D7B5C00E889D4 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,11 @@
 		86114CD82813331500D03B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86114CDB2813331500D03B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86114CDD2813331500D03B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86114CE82813337300D03B56 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
-		86114CEA281333A900D03B56 /* PokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeViewModel.swift; sourceTree = "<group>"; };
+		86114CE82813337300D03B56 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		86114CEA281333A900D03B56 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		86F77FC8281D70D400E889D4 /* Post+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Image.swift"; sourceTree = "<group>"; };
+		86F77FCA281D710000E889D4 /* Post+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+String.swift"; sourceTree = "<group>"; };
+		86F77FCD281D7B5C00E889D4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 		86114CCE2813331400D03B56 /* ProjectMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				86F77FCC281D7B2500E889D4 /* ViewCell */,
+				86F77FC7281D70CC00E889D4 /* Helper */,
 				86114CE72813334500D03B56 /* Onboarding */,
 				86114CE62813333500D03B56 /* Screens */,
 				86114CE52813332A00D03B56 /* ViewModel */,
@@ -76,7 +84,7 @@
 		86114CE32813331D00D03B56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86114CE82813337300D03B56 /* Pokemon.swift */,
+				86114CE82813337300D03B56 /* Posts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,7 +100,7 @@
 		86114CE52813332A00D03B56 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				86114CEA281333A900D03B56 /* PokeViewModel.swift */,
+				86114CEA281333A900D03B56 /* PostsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -111,6 +119,23 @@
 				86114CDA2813331500D03B56 /* LaunchScreen.storyboard */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		86F77FC7281D70CC00E889D4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				86F77FC8281D70D400E889D4 /* Post+Image.swift */,
+				86F77FCA281D710000E889D4 /* Post+String.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		86F77FCC281D7B2500E889D4 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				86F77FCD281D7B5C00E889D4 /* PostTableViewCell.swift */,
+			);
+			path = ViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F77FC9281D70D400E889D4 /* Post+Image.swift in Sources */,
 				86114CD42813331400D03B56 /* ViewController.swift in Sources */,
-				86114CE92813337300D03B56 /* Pokemon.swift in Sources */,
+				86F77FCB281D710000E889D4 /* Post+String.swift in Sources */,
+				86F77FCE281D7B5C00E889D4 /* PostTableViewCell.swift in Sources */,
+				86114CE92813337300D03B56 /* Posts.swift in Sources */,
 				86114CD02813331400D03B56 /* AppDelegate.swift in Sources */,
 				86114CD22813331400D03B56 /* SceneDelegate.swift in Sources */,
-				86114CEB281333A900D03B56 /* PokeViewModel.swift in Sources */,
+				86114CEB281333A900D03B56 /* PostsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
